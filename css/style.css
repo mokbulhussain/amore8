@@ -306,7 +306,6 @@ text-fill-color: transparent;
 }
 
 .nav-menu-right li a {
-    color: #3B406C;
     font-family: GilroyBold;
     font-size: 14px;
     margin-left: 24px;
@@ -319,6 +318,10 @@ text-fill-color: transparent;
 
 border: 1px solid #FF6F44;
 padding: 10px 24px;
+border-radius: 6px;
+}
+.nav-menu-right li a:hover{
+    border: 1px solid #883b23;
 }
 
 
@@ -608,6 +611,25 @@ section.service {
     box-shadow: 30px 40px 80px rgba(20, 14, 95, 0.08);
 }
 
+.service-list-active{
+    box-shadow: 30px 40px 80px rgba(20, 14, 95, 0.08);
+    z-index: 1;
+}
+.service-list-active a{
+    box-shadow: 30px 40px 80px rgba(20, 14, 95, 0.08);
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.service-list-active a svg path {
+    fill: red;
+    fill: #FF6F44 !important;
+}
+
+
 /* 6. Service End*/
 
 
@@ -702,6 +724,7 @@ img.jurney-img {
 /* Price */
 section.price {
     padding: 92px 0px 100px 0px;
+    margin-top: 140px;
 }
 
 .price-tab {
@@ -710,7 +733,7 @@ section.price {
     background: #F6F9FF;
     padding: 8px;
     border-radius: 60px;
-    margin-top: 16px;
+    margin-top: 30px;
     margin-bottom: 40px;
     border: 0.5px solid #0066FF;
 }
@@ -749,7 +772,9 @@ section.price {
     box-shadow: 0px 0px 2px rgba(61, 59, 78, 0.5);
     border-radius: 12px;
     text-align: center;
-    padding: 40px 30px;
+    padding: 40px 26px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .price-list h3 {
@@ -836,6 +861,35 @@ border-radius: 6px;
 color: #ffffff;
 border: none;
 }
+.price-list-active{
+    background: linear-gradient(180deg, #6546CB -2.54%, #974EF5 98.71%);
+    border-radius: 24px;
+    transition: .5s;
+    transform: scale(1.1);
+    
+}
+.price-list-active p a{
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
+    border-radius: 6px;
+    color: #ffffff;
+    border: none;
+}
+
+.price-list-active ul li span{
+    color: #ffffff;
+}
+
+.price-list-active h3{
+    color: #ffffff;
+}
+.price-list-active h4{
+    color: #ffffff;
+}
+
+.price-list-active ul li:after{
+    content: url('../img/price/check_hover.png');
+}
+
 
 
 
@@ -852,6 +906,7 @@ border: none;
 section.profile-blog {
     background: #F6F9FF;
     padding: 80px 0px 80px 0px;
+    margin-top: 80px;
 }
 
 .profile-blog-heading .user {
@@ -905,6 +960,10 @@ section.profile-blog {
     text-decoration: none;
     margin-top: 70px;
 }
+
+.profile-view-more a:hover {
+    box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 12%);
+}
 .profile-blog-item {
     background: #FFFFFF;
     box-shadow: 0px 0px 2px rgba(30, 35, 157, 0.16);
@@ -932,7 +991,8 @@ section.profile-blog {
 .profile-blog-location span {
     font-size: 14px;
     line-height: 24px;
-    font-family: 'RalewayRegular';
+
+    font-family: 'RalewaySemibold';
     color: #3B406C;
 }
 
@@ -972,20 +1032,23 @@ section.newsletter {
 }
 
 .newsletter-content h3 {
-    font-size: 28px;
+        font-size: 32px;
+        line-height: 42px;
+        color: #3B406C;
+        font-family: 'RalewayBold';
 }
 .subscribe-form {
     width: 450px;
     background: #F6F9FF;
     padding: 6px 12px;
-    border-radius: 30px;
+    border-radius: 40px;
     margin-top: 36px;
 }
 
 .subscribe-form form input {
     border: none;
     padding-left: 10px;
-    height: 40px;
+    height: 60px;
     width: 250px;
     background: transparent;
     /* border-radius: 22px; */
@@ -1079,7 +1142,7 @@ footer {
 .footer-part h3 {
     color: #ffffff;
     font-size: 14px;
-    font-family: 'PoppinsSemiBold';
+    font-family: RalewaySemibold;
     line-height: 24px;
 }
 
