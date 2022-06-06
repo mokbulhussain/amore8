@@ -30,8 +30,29 @@
         background: #ffffff;
         position: absolute;
         width: 100%;
-        top: 72px;
+        top: 92px;
         left: 0px;
+        padding: 10px 0px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icon/menu.svg);
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-toggler-icon {
+
+      	border-radius: 2px;
+  	}
+    .nav-menu {
+      	align-items: left;
+      	display: inline;
+    }
+    .nav-menu-right li a {
+		margin-left: 0px;
     }
     .navbar-toggler-icon {
 
@@ -44,6 +65,7 @@
     .nav-menu-right li a {
 		margin-left: 12px;
     }
+    
     .banner-content h1 {
         font-size: 48px;
     }
@@ -154,6 +176,10 @@
     .subscribe-form {
         width: 350px;
     }
+    .banner-content {
+        margin-top: 50px;
+        text-align: center;
+    }
     .banner {
         background-size: 200px;
     }
@@ -163,11 +189,50 @@
     }
 
     .banner-content h1 {
-        font-size: 42px;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .banner-content a {
+        padding: 10px 24px;
+       
+    }
+    .banner-content p {
+        margin-bottom: 40px;
     }
 
     .banner-content {
         margin-top: 50px;
+    }
+    section.relationship {
+        margin-top: 120px;
+    }
+    .relationship-content {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .relationship-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    section.service {
+        margin-top: 120px;
+    }
+
+    .service-list {
+        text-align: center;
+    }
+    section.journey {
+        margin-top: 120px;
+       
+    }
+    .journey-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 38px;
     }
 
     .journey-content h2 {
